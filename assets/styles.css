@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
+
+body {
+    font-family: 'Nunito', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.glass {
+    background: rgba(59, 130, 246, 0.2);
+}
+
+.glass-text {
+    background: rgba(0, 0, 0, 0.2);
+}
