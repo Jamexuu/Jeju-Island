@@ -14,10 +14,11 @@
 <body>
     <div class="container-fluid">
         <!-- navbar -->
-        <div class="container glass rounded-4 p-2 container-sm-fluid sticky-top" style="color: #2a2b2a;">
+        <div class="container glass rounded-4 p-2 container-sm-fluid sticky-top mt-4 border border-dark"
+            style="color: var(--font-color)">
             <div class="row">
                 <div class="col-1 d-none d-md-block">
-                    <img src="assets/images/jeju.png" class="w-100 p-3 ms-5" alt="">
+                    <img src="assets/images/jeju.png" class="w-100 p-3 ms-5" alt="" />
                 </div>
                 <div class="col-12 col-md-11">
                     <div class="row me-md-5">
@@ -33,7 +34,8 @@
                             <a class="nav-link" href="#">History</a>
                         </div>
                         <div class="col-4 text-start">
-                            <a class="nav-link" href="#">Media Spotlight</a>
+                            <a class="nav-link d-md-block d-none" href="#">Media Spotlight</a>
+                            <a class="nav-link d-block d-md-none" href="#">Spotlight</a>
                         </div>
                     </div>
                 </div>
@@ -42,16 +44,137 @@
 
         <!-- hero -->
         <div class="container position-relative mt-5">
-            <div class="glass-img rounded-4">
-                <img src="assets/images/hero.jpg" alt="hero image" class="img-fluid rounded-4"
-                    style="height: 50vh; width: 100%; object-fit: cover;">
+            <div class="glass-img rounded-4 border border-dark">
+                <img src="assets/images/hero.jpg" alt="hero image" class="img-fluid rounded-4 w-100"
+                    style="height: 50vh; object-fit: cover" />
                 <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
-                    <div class="display-6 fw-bold p-4 rounded-4">Experience the Magic of Jeju</div>
+                    <div class="display-6 fw-bold p-4 rounded-4">
+                        Experience the Magic of Jeju
+                    </div>
+                    <div class="btn btn-primary text-white rounded-5 border border-dark" onclick="location.href='#walkthrough'">
+                        Quick Walkthrough
+                    </div>
                 </div>
             </div>
         </div>
 
+        <div class="container" id="walkthrough">
+            <div class="row">
+                <div class="h2 mt-5 text-center fw-semibold">Why Jeju?</div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-12 col-md-4">
+                    <div class="h3 text-center fw-semibold">Nature</div>
+                    <div class="card rounded-4 glass border border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <img src="assets/images/nature-thumbnail.jpg" alt="Nature"
+                                        class="img-fluid rounded-4 border border-dark" />
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 border border-dark rounded-4">
+                                    <div class="p">
+                                        Jeju Island is a natural wonder filled with volcanic
+                                        peaks, lush forests, crystal-clear beaches, and
+                                        breathtaking waterfalls. Its scenic landscapes offer a
+                                        perfect blend of adventure and serenity, making it a
+                                        paradise for nature lovers.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn btn-primary text-white rounded-5 border border-dark mt-2">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="h3 text-center fw-semibold">Food</div>
+                    <div class="card rounded-4 glass border border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <img src="assets/images/food-thumbnail.jpg" alt="Food"
+                                        class="img-fluid rounded-4 border border-dark" />
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 border border-dark rounded-4">
+                                    <div class="p">
+                                        Jeju Island’s food scene is a delicious mix of freshness and tradition, famous
+                                        for its seafood, black pork barbecue, and tangerines. Every dish reflects the
+                                        island’s coastal charm and local way of life.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn btn-primary text-white rounded-5 border border-dark mt-2">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4">
+                    <div class="h3 text-center fw-semibold">Culture</div>
+                    <div class="card rounded-4 glass border border-dark">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-12">
+                                    <img src="assets/images/culture-thumbnail.jpg" alt="Culture"
+                                        class="img-fluid rounded-4 border border-dark" />
+                                </div>
+                            </div>
+                            <div class="row mt-2">
+                                <div class="col-12 border border-dark rounded-4">
+                                    <div class="p">
+                                        Jeju’s culture is rich and deeply rooted in its island heritage, from the iconic
+                                        haenyeo women divers to its vibrant folk villages and unique dialect. It’s a
+                                        place where old traditions beautifully blend with modern island living.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="btn btn-primary text-white rounded-5 border border-dark mt-2">
+                                Learn More
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
+
+    <!-- waves background pattern -->
+    <svg class="position-fixed bottom-0 start-0 w-100 pe-none z-n1" width="100%" height="300"
+        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+            <pattern id="wavesPattern" x="0" y="0" width="1440" height="300" patternUnits="userSpaceOnUse">
+                <path transform="scale(1, 0.9375)" fill="#0099ff" fill-opacity="1"
+                    d="M0,96L34.3,117.3C68.6,139,137,181,206,176C274.3,171,343,117,411,96C480,75,549,85,617,122.7C685.7,160,754,224,823,234.7C891.4,245,960,203,1029,160C1097.1,117,1166,75,1234,64C1302.9,53,1371,75,1406,85.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z" />
+            </pattern>
+        </defs>
+        <rect x="0" y="0" width="100%" height="300" fill="url(#wavesPattern)" />
+    </svg>
+
+    <script>
+        // parallax scrolling for wave pattern
+        document.addEventListener("DOMContentLoaded", () => {
+            const pat = document.getElementById("wavesPattern");
+            if (!pat) return;
+
+            const speed = 0.5;
+            const update = () => {
+                const offset = window.scrollY * speed;
+                pat.setAttribute("patternTransform", `translate(${-offset}, 0)`);
+            };
+
+            // set initial position
+            update();
+
+            // update on scroll
+            window.addEventListener("scroll", update, { passive: true });
+        });
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
         crossorigin="anonymous"></script>
