@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400&display=swap');
 
 :root {
-    --color-primary: #0099ff;
-    --font-color: #2a2b2a;
+    --color-primary: #1F87E0;
+    --main-font-color: #E0781F;
+    --regular-font-color: #2a2b2a;
     --glass-blur: 10px; 
 }
 
@@ -24,5 +25,12 @@ html {
     background: rgba(0, 153, 255, 0.08);
 }
 
+.navbar-brand, .h1 {
+    color: var(--main-font-color);
+}
+
+.footer {
+    background: linear-gradient(0deg, rgba(0,0,0,.65), rgba(0,0,0,.65)), var(--color-primary);
+}
 
 
