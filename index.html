@@ -17,8 +17,22 @@
         <!-- navbar -->
         <div id="navbar" class="sticky-top z-3"></div>
 
-        <!-- hero hero -->
-        <div id="hero"></div>
+        <!-- hero -->
+        <div class="container position-relative mt-5">
+            <div class="glass-img rounded-4 border border-dark">
+                <img src="/assets/images/hero.jpg" alt="hero image" class="img-fluid rounded-4 w-100"
+                    style="height: 50vh; object-fit: cover" />
+                <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+                    <div class="display-3 fw-bold p-4 rounded-4">
+                        Experience the Magic of Jeju
+                    </div>
+                    <div class="btn btn-primary text-white rounded-5 border border-dark"
+                        onclick="location.href='#walkthrough'">
+                        Quick Walkthrough
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <div class="container" id="walkthrough">
             <div class="row">
@@ -154,8 +168,8 @@
                                     <div
                                         class="border border-dark rounded-4 overflow-hidden position-relative shadow-lg">
                                         <div class="ratio ratio-16x9">
-                                            <img src="assets/images/cheonjeyeon-waterfall.png" alt="Cheonjeyeon Waterfall"
-                                                class="w-100 h-100 object-fit-cover">
+                                            <img src="assets/images/cheonjeyeon-waterfall.png"
+                                                alt="Cheonjeyeon Waterfall" class="w-100 h-100 object-fit-cover">
                                         </div>
                                         <div
                                             class="position-absolute bottom-0 start-0 text-white p-3 w-100 bg-dark bg-opacity-50 text-center">
@@ -256,11 +270,17 @@
                     </div>
                 </div>
                 <div class="col-6">
-                    <a href="https://www.youtube.com/watch?v=Td3XifkEU5k" target="_blank" rel="noopener noreferrer" aria-label="Play video on YouTube: Ultimate Travel Escape" class="text-decoration-none">
+                    <a href="https://www.youtube.com/watch?v=Td3XifkEU5k" target="_blank" rel="noopener noreferrer"
+                        aria-label="Play video on YouTube: Ultimate Travel Escape" class="text-decoration-none">
                         <div class="ratio ratio-16x9 rounded-4 overflow-hidden border border-dark position-relative">
-                            <img src="https://img.youtube.com/vi/Td3XifkEU5k/hqdefault.jpg" alt="Ultimate Travel Escape — YouTube thumbnail" class="w-100 h-100 object-fit-cover" loading="lazy" decoding="async">
-                            <div class="position-absolute top-50 start-50 translate-middle rounded-circle bg-dark bg-opacity-75 d-flex align-items-center justify-content-center" style="width:64px;height:64px;">
-                                <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+                            <img src="https://img.youtube.com/vi/Td3XifkEU5k/hqdefault.jpg"
+                                alt="Ultimate Travel Escape — YouTube thumbnail" class="w-100 h-100 object-fit-cover"
+                                loading="lazy" decoding="async">
+                            <div class="position-absolute top-50 start-50 translate-middle rounded-circle bg-dark bg-opacity-75 d-flex align-items-center justify-content-center"
+                                style="width:64px;height:64px;">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="white" aria-hidden="true">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
                             </div>
                         </div>
                     </a>
