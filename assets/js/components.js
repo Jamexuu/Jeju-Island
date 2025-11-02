@@ -12,8 +12,8 @@ async function loadComponent(id, file) {
 
 // Load components when the DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    loadComponent('navbar', 'components/navbar.html');
-    loadComponent('hero', 'components/hero.html');
-    loadComponent('footer', 'components/footer.html');
-    loadComponent('waves', 'components/waves.html');
+    loadComponent('navbar', '/components/navbar.html');
+    loadComponent('hero', '/components/hero.html');
+    loadComponent('footer', '/components/footer.html');
+    loadComponent('waves', '/components/waves.html');
 });
