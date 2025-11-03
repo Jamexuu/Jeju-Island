@@ -12,6 +12,10 @@ async function loadComponent(id, file) {
 
 // Load components when the DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    loadComponent('navbar', '/components/navbar.html');
-    loadComponent('footer', '/components/footer.html');;
+    const REPO_NAME = 'Jeju-Island';
+    const isGitHubPages = /github\.io$/i.test(location.hostname);
+    const base = isGitHubPages ? `/${REPO_NAME}` : '';
+
+    loadComponent('navbar', `${base}/components/navbar.html`);
+    loadComponent('footer', `${base}/components/footer.html`);
 });
