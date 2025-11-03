@@ -1,0 +1,445 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Jeju | Explore</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="/assets/styles.css">
+</head>
+
+<body>
+    <div class="container-fluid d-flex flex-column min-vh-100">
+
+        <!-- navbar -->
+        <div id="navbar" class="sticky-top z-3"></div>
+
+        <!-- hero -->
+        <div class="container position-relative mt-5">
+            <div class="glass-img rounded-4 border border-dark">
+                <img src="/assets/images/explore-hero.jpg" alt="hero image"
+                    class="img-fluid rounded-4 w-100 d-none d-md-block" style="height: 50vh; object-fit: cover" />
+                <img src="/assets/images/explore-hero-mobile.jpg" alt="hero image"
+                    class="img-fluid rounded-4 w-100 d-block d-md-none" style="height: 50vh; object-fit: cover" />
+                <div class="position-absolute top-50 start-50 translate-middle text-white text-center">
+                    <div class="display-3 fw-bold p-4 rounded-4">
+                        Explore Jeju Island
+                    </div>
+                    <div class="btn btn-primary text-white rounded-5 border border-dark"
+                        onclick="location.href='#walkthrough'">
+                        Dive In
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- explore sections -->
+        <!-- Nature -->
+        <div class="container my-5" id="nature">
+            <div class="row">
+                <div class="h1 fw-semibold mb-3">Nature</div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="border border-dark rounded-4 p-3 p-md-4 glass">
+                        <div class="vstack gap-4">
+                            <!-- hallasan -->
+                            <div class="card border border-dark rounded-4" id="hallasan">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/hallasan-mountain.jpg" alt="Hallasan Mountain"
+                                                    class="w-100 h-100 rounded-4" style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Hallasan Mountain</h3>
+                                            <p class="mb-0">Standing proudly at the center of Jeju, Hallasan is South
+                                                Korea’s highest peak and a dormant volcano covered in lush forests. Hike
+                                                to its summit and you’ll find breathtaking crater lakes and panoramic
+                                                island views.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- seongsan ilchulbong -->
+                            <div class="card border border-dark rounded-4" id="seongsan-ilchulbong">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/seongsan-ilchulbong.jpg"
+                                                    alt="Seongsan Ilchulbong" class="w-100 h-100 rounded-4"
+                                                    style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Seongsan Ilchulbong</h3>
+                                            <p class="mb-0">A UNESCO World Heritage Site, Seongsan Ilchulbong is a
+                                                volcanic tuff cone that glows beautifully at sunrise. The short hike to
+                                                the top rewards visitors with sweeping coastal views and a sea of golden
+                                                light.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- cheonjiyeon waterfall -->
+                            <div class="card border border-dark rounded-4" id="cheonjeyeon">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/cheonjeyeon-waterfall.png"
+                                                    alt="Cheonjiyeon Waterfall" class="w-100 h-100 rounded-4"
+                                                    style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Cheonjiyeon Waterfall</h3>
+                                            <p class="mb-0">Located in Seogwipo, Cheonjiyeon Waterfall is a stunning
+                                                natural spot where cool, clear water drops into a deep blue pond.
+                                                Surrounded by lush greenery and volcanic cliffs, it’s a peaceful place
+                                                to enjoy Jeju’s calm beauty, especially at night when the falls are
+                                                softly lit.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- manjanggul cave -->
+                            <div class="card border border-dark rounded-4" id="manjanggul">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/manjanggul-cave.png" alt="Manjanggul Cave"
+                                                    class="w-100 h-100 rounded-4" style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Manjanggul Cave</h3>
+                                            <p class="mb-0">Formed thousands of years ago, Manjanggul Cave is one of the
+                                                world’s longest lava tubes. Step inside this natural wonder and explore
+                                                stunning rock formations shaped by ancient volcanic flows.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- camellia hill -->
+                            <div class="card border border-dark rounded-4" id="camellia-hill">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/nature-thumbnail.jpg" alt="Camellia Hill"
+                                                    class="w-100 h-100 rounded-4" style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Camellia Hill</h3>
+                                            <p class="mb-0">A peaceful garden filled with colorful camellias, Camellia
+                                                Hill is a photographer’s dream. Depending on the season, you’ll find
+                                                endless blooms, vibrant greenery, and a tranquil atmosphere perfect for
+                                                a nature stroll.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Food -->
+        <div class="container my-5" id="food">
+            <div class="row">
+                <div class="h1 fw-semibold mb-3">Food</div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="border border-dark rounded-4 p-3 p-md-4 glass">
+                        <div class="vstack gap-4">
+                            <!-- Black Pork BBQ -->
+                            <div class="card border border-dark rounded-4">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/black-pork-bbq.png" alt="Jeju Black Pork BBQ"
+                                                    class="w-100 h-100 rounded-4" style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Black Pork BBQ (Heuk Dwaeji)</h3>
+                                            <p class="mb-0">Jeju’s signature dish — tender, juicy pork from the island’s
+                                                native black pigs, grilled over charcoal for a smoky flavor you can’t
+                                                find anywhere else.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Abalone Porridge -->
+                            <div class="card border border-dark rounded-4">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/abalone-porridge.png"
+                                                    alt="Jeju Abalone Porridge" class="w-100 h-100 rounded-4"
+                                                    style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Abalone Porridge (Jeonbokjuk)</h3>
+                                            <p class="mb-0">A comforting dish made with fresh Jeju abalone, rice, and
+                                                sesame oil. It’s simple, rich, and perfect after a day of exploring.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Gogi Guksu -->
+                            <div class="card border border-dark rounded-4">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/pork-noodle-soup.png" alt="Jeju Gogi Guksu"
+                                                    class="w-100 h-100 rounded-4" style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Gogi Guksu (Pork Noodle Soup)</h3>
+                                            <p class="mb-0">O’Sulloc’s fields offer fragrances of roasted and fresh
+                                                green
+                                                teas—perfect with tangerine sweets after a day’s adventure.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Grilled Mackerel -->
+                            <div class="card border border-dark rounded-4">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/grilled-mackerel.png"
+                                                    alt="Jeju Grilled Mackerel" class="w-100 h-100 rounded-4"
+                                                    style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Grilled Mackerel (Godeungeo Gui)</h3>
+                                            <p class="mb-0">Freshly caught mackerel from Jeju’s coast, seasoned with
+                                                salt and grilled until crispy on the outside and juicy inside.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Hallabong -->
+                            <div class="card border border-dark rounded-4">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/hallabong.png" alt="Jeju Hallabong"
+                                                    class="w-100 h-100 rounded-4" style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Hallabong (Jeju Tangerine)</h3>
+                                            <p class="mb-0">A sweet and juicy citrus fruit native to Jeju, known for its
+                                                distinct bump on top. It’s often used in desserts, juices, and
+                                                souvenirs.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Culture -->
+        <div class="container my-5" id="culture">
+            <div class="row">
+                <div class="h1 fw-semibold mb-3">Culture</div>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <div class="border border-dark rounded-4 p-3 p-md-4 glass">
+                        <div class="vstack gap-4">
+                            <!-- Haenyeo -->
+                            <div class="card border border-dark rounded-4">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/culture-thumbnail.jpg" alt="Haenyeo"
+                                                    class="w-100 h-100 rounded-4" style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Haenyeo (Jeju Women Divers)</h3>
+                                            <p class="mb-0">The Haenyeo are Jeju’s famous women divers, known for diving
+                                                deep into the sea without oxygen tanks to collect abalone, sea urchins,
+                                                and shellfish. Recognized by UNESCO as an Intangible Cultural Heritage,
+                                                they represent strength, independence, and the island’s matriarchal
+                                                tradition.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Grandfather Statues -->
+                            <div class="card border border-dark rounded-4">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/grandfather-statues.png"
+                                                    alt="Grandfather Statues" class="w-100 h-100 rounded-4"
+                                                    style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Dol Hareubang (Stone Grandfather Statues)
+                                            </h3>
+                                            <p class="mb-0">These volcanic rock statues, often seen at village entrances
+                                                and tourist spots, are believed to guard against evil spirits and bring
+                                                fertility and protection. Their name means “grandfather made of stone,”
+                                                and they’ve become a beloved symbol of Jeju.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Jeju Traditional Houses -->
+                            <div class="card border border-dark rounded-4">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/jeju-traditional-houses.png" alt="Choga Houses"
+                                                    class="w-100 h-100 rounded-4" style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Jeju Traditional Houses (Choga)</h3>
+                                            <p class="mb-0">Traditional Jeju choga houses are built with black basalt
+                                                stones and thatched roofs made of reeds. Designed to resist Jeju’s
+                                                strong winds, these houses reflect the island’s harmony with nature and
+                                                resourceful architecture.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Jeju Rituals -->
+                            <div class="card border border-dark rounded-4">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/jeju-rituals.png" alt="Jeju Rituals"
+                                                    class="w-100 h-100 rounded-4" style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Jeju Folk Religion and Gut Rituals</h3>
+                                            <p class="mb-0">Jeju’s shamanistic culture is deeply rooted in local
+                                                beliefs. The island has more than 18,000 gods, and gut ceremonies are
+                                                performed by shamans (mansin) to pray for health, good harvests, and
+                                                safety. These rituals combine music, dance, and storytelling.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Jeju Fire Festival -->
+                            <div class="card border border-dark rounded-4">
+                                <div class="card-body">
+                                    <div class="row g-4 align-items-center">
+                                        <div class="col-12 col-sm-4 col-md-3">
+                                            <div class="ratio ratio-1x1 rounded-4 border border-dark">
+                                                <img src="/assets/images/fire-festival.png" alt="Jeju Fire Festival"
+                                                    class="w-100 h-100 rounded-4" style="object-fit: cover;">
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-sm-8 col-md-9">
+                                            <h3 class="h5 fw-semibold mb-2">Jeju Fire Festival (Jeongwol Daeboreum
+                                                Festival)</h3>
+                                            <p class="mb-0">Held every spring at Saebyeol Oreum, the Jeju Fire Festival
+                                                celebrates the start of the new year in the lunar calendar. Locals burn
+                                                dry grass on the hillsides to bless the land for farming and to drive
+                                                away bad luck, creating a breathtaking sea of flames.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- navigate jeju -->
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="h1">Navigate Jeju</div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <div class="card border border-dark rounded-4 glass mb-5">
+                        <div class="card-body">
+                            <div class="ratio ratio-16x9 rounded-4 border border-dark overflow-hidden">
+                                <iframe
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d426493.00475745276!2d126.28301538484793!3d33.37133933892717!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x350ce3544cc84045%3A0x66bc36d2981ebf31!2sJeju-do%2C%20South%20Korea!5e0!3m2!1sen!2sph!4v1762161690144!5m2!1sen!2sph"
+                                    class="w-100 h-100 border-0" style="border:0;" allowfullscreen loading="lazy"
+                                    referrerpolicy="no-referrer-when-downgrade" title="Jeju Island map">
+                                </iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-6 d-none d-md-block"></div>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <div class="mt-auto" id="footer"></div>
+    </div>
+
+    <!-- waves background pattern -->
+    <svg class="position-fixed bottom-0 start-0 w-100 pe-none z-n1" width="100%" height="300"
+        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+            <pattern id="wavesPattern" x="0" y="0" width="1440" height="300" patternUnits="userSpaceOnUse">
+                <path transform="scale(1, 0.9375)" fill="#1F87E0" fill-opacity="1"
+                    d="M0,96L34.3,117.3C68.6,139,137,181,206,176C274.3,171,343,117,411,96C480,75,549,85,617,122.7C685.7,160,754,224,823,234.7C891.4,245,960,203,1029,160C1097.1,117,1166,75,1234,64C1302.9,53,1371,75,1406,85.3L1440,96L1440,320L1405.7,320C1371.4,320,1303,320,1234,320C1165.7,320,1097,320,1029,320C960,320,891,320,823,320C754.3,320,686,320,617,320C548.6,320,480,320,411,320C342.9,320,274,320,206,320C137.1,320,69,320,34,320L0,320Z" />
+            </pattern>
+        </defs>
+        <rect x="0" y="0" width="100%" height="300" fill="url(#wavesPattern)" />
+    </svg>
+
+    <script src="/assets/js/components.js" defer></script>
+    <script src="/assets/js/parallax.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
