@@ -21,10 +21,6 @@ html {
     backdrop-filter: blur(var(--glass-blur));
 }
 
-.glass-img {
-    background: rgba(0, 153, 255, 0.08);
-}
-
 .navbar-brand, .h1 {
     color: var(--main-font-color);
 }
